@@ -1,3 +1,3 @@
 # aphaenogaster-16S
 
-R script and video data used to analyze the behavior and microbiome profile of Aphaenogaster picea ants under laboratory conditions.
+This repository contains the R code and video data used to analyze the behavior and microbiome profile of Aphaenogaster picea ants under laboratory conditions.
