@@ -1,5 +1,24 @@
-### This R script has been adapted from code written by Christina Pavloudi ###
-########## Use this space to add contact information for Christina ##########
+# ============================================================
+'R code for Microbiome analysis using DADA2
+
+Christina Pavloudi
+christina.pavloudi@embrc.eu
+https://cpavloud.github.io/mysite/
+
+	Copyright (C) 2024 Christina Pavloudi
+  
+    This script is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+  
+    This script is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.'
+
+# =============================================================
+
 
 #The ShortRead and ggplot2 packages are available from Bioconductor
 library(dada2); packageVersion("dada2")
