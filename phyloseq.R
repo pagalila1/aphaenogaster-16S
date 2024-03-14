@@ -19,24 +19,32 @@ https://cpavloud.github.io/mysite/
 
 # =============================================================
 
+############################LOAD LIBRARIES #######################################
 
-#Tell me where is the working directory (this command its like pwd in UNIX)
-getwd()
-#Change the working directory (like cd)
-setwd("/Volumes/Drive/DADA2phyloseq_output/outputFiles_final")
+# List of packages needed
+.packages = c("vegan", "ecodist", "GGally", "ape", "BiocManager", "ggplot2", "tidyverse", "RColorBrewer")
 
-# for the actual analysis
+# Install CRAN packages (if not already installed)
+.inst <- .packages %in% installed.packages()
+if(length(.packages[!.inst]) > 0) install.packages(.packages[!.inst])
+
+# Load packages into session 
+lapply(.packages, require, character.only=TRUE)
+
+packageVersion("vegan")
+packageVersion("ecodist")
+packageVersion("GGally")
+packageVersion("ape")
+packageVersion("ggplot2")
+packageVersion("tidyverse")
+packageVersion("RColorBrewer")
+
+BiocManager::install("phyloseq")
+install.packages("phyloseq")
 library(phyloseq); packageVersion("phyloseq")
-# for the beautiful plots
-library(ggplot2); packageVersion("ggplot2")
-#to create beautiful colour palettes for your plots
-library(RColorBrewer); packageVersion("RColorBrewer") 
+
 # Define a default theme for ggplot graphics
 theme_set(theme_bw()) 
-
-library(dplyr)
-library(ape)
-library(vegan)
 
 ####################### Import and format your data ##########################
 ##############################################################################
