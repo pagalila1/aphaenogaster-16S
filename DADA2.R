@@ -19,13 +19,12 @@ https://cpavloud.github.io/mysite/
 
 # =============================================================
 
+############################LOAD LIBRARIES #######################################
 
 #The ShortRead and ggplot2 packages are available from Bioconductor
 library(dada2); packageVersion("dada2")
 library(ShortRead); packageVersion("ShortRead")
 library(ggplot2); packageVersion("ggplot2")
-
-setwd("/Volumes/Drive/Data/")
 
 #Define the following path variable so that it points to the extracted directory on your machine:
 path <- getwd() #CHANGE ME to the directory containing the fastq files after unzipping. (path = getwd)
